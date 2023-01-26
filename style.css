@@ -1,0 +1,26 @@
+html {
+    font-family: 'Outfit', sans-serif;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: white;
+}
+
+.qr-container {
+    margin: 10px;
+}
+
+.qr-container img {
+    width:50%;
+    height:50%;
+
+}
+
+.text-container {
+    background-color: white;
+}
