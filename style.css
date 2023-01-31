@@ -2,25 +2,59 @@ html {
     font-family: 'Outfit', sans-serif;
 }
 
+body {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: auto;
+}
+
 .main-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(110, 14, 14);
+  height: 100%:
+  max-height: 497px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .qr-container {
-    margin: 10px;
+    margin: 0 auto;
+    width:90%;
+    max-width: 288px;
+    padding-top: 10px;
+    display:flex;
+    justify-content: center;
+   
 }
 
 .qr-container img {
-    width:50%;
-    height:50%;
+    width:65%;
+    height:65%;
+    border-radius: 5px;
 
 }
 
 .text-container {
-    background-color: white;
+    width: 80%;
+    max-width: 288px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.text-container h1 {
+    font-size: 22px;
+}
+
+.text-container p {
+    font-size: 15px;
 }
