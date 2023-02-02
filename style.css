@@ -1,17 +1,23 @@
 html {
     font-family: 'Outfit', sans-serif;
+    
 }
 
 body {
     min-height: 100vh;
-    display:flex;
-    flex-direction: column;
     overflow: hidden;
     background-color: hsla(212, 45%, 89%);
+    display: flex;
+    flex-direction: column;
+    margin:0;
 }
 
 footer {
-    flex-grow: 1;
+    position: fixed;  /* always stay where I put you on the screen */
+    bottom: 0;  /* I'm putting you at the bottom with no space in between */
+    width: 100%;  /* fill the width of your containing element (body) */
+    padding-bottom: 10px;
+
 }
 
 .main-container {
@@ -26,13 +32,14 @@ footer {
   max-height: 497px;
   width: 100%;
   max-width: 320px;
+  border-radius: 20px;
 }
 
 .qr-container {
     margin: 0 auto;
     width:90%;
     max-width: 288px;
-    padding-top: 10px;
+    padding-top: 1rem;
     display:flex;
     justify-content: center;
     background-image: 'images/image-qr-code.png';
@@ -57,9 +64,12 @@ footer {
 
 .text-container h1 {
     font-size: 22px;
+    line-height: 28px;
 }
 
 .text-container p {
     font-size: 15px;
+    font-weight: 400;
     color: hsl(220, 15%, 55%);
 }
+
