@@ -65,7 +65,7 @@ footer {
 .text-container h1 {
     font-size: 22px;
     line-height: 28px;
-    color:hsla(218, 44%, 22%, 0.9);
+    color:hsl(218, 44%, 22%);
 }
 
 .text-container p {
