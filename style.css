@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Outfit', sans-serif;
     
@@ -5,79 +9,61 @@ html {
 
 body {
     min-height: 100vh;
-    overflow: hidden;
     background-color: hsla(212, 45%, 89%);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin:0;
-}
-
-footer {
-    position: fixed;  /* always stay where I put you on the screen */
-    bottom: 0;  /* I'm putting you at the bottom with no space in between */
-    width: 100%;  /* fill the width of your containing element (body) */
-    padding-bottom: 10px;
-
+    text-align:center;
 }
 
 .main-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  padding-bottom: 20px;
-  background-color: hsl(0, 0%, 100%);
-  /* height: 100%: */
-  max-height: 497px;
-  width: 100%;
-  max-width: 320px;
-  border-radius: 20px;
-}
+    padding: 1rem;
+    margin: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    max-width: 20rem;
+  }
 
-.qr-container {
-    margin: 0 auto;
-    width:90%;
-    max-width: 288px;
-    padding-top: 1rem;
-    display:flex;
-    justify-content: center;
-    background-image: 'images/image-qr-code.png';
-    background-size: cover;
-   
-}
 
-.qr-container img {
-    width:100%;
-    height:100%;
-    border-radius: 5px;
+.main-container img {
+    max-width:100%;
+    display:block;
+    border-radius: 10px;
 
 }
 
-.text-container {
-    width: 80%;
+.main-container p {
+    width: 85%;
     max-width: 288px;
     margin: 0 auto;
-    text-align: center;
-    
-}
-
-.text-container h1 {
-    font-size: 22px;
-    line-height: 28px;
-    color:hsl(218, 44%, 22%);
-}
-
-.text-container p {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 400;
     color: hsl(220, 15%, 55%);
+    padding-bottom: 2rem;
 }
 
+.main-container h1 {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    color:hsl(218, 44%, 22%);
+    padding-top:0.5rem;
+}
+
+/* 
+footer {
+    position: fixed;  
+    bottom: 0;  
+    width: 100%;  
+    padding-bottom: 10px;
+
+} */
+
+
 .attribution {
-    font-size: 11px;
+    font-size: 0.6875rem;
     text-align: center;
     color: hsl(228, 45%, 44%);
-    max-width: 50%;
     margin: 0 auto;
 }
